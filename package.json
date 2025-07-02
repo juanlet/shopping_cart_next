@@ -1,27 +1,37 @@
 {
-  "name": "challenge_shopping_cart_nextjs",
+  "name": "nextjs-promotional-cart",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --watch"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "@reduxjs/toolkit": "^2.2.6",
+    "@tailwindcss/postcss": "^4.1.11",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.4",
+    "postcss": "^8.5.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-redux": "^9.2.0",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.14.10",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.0",
     "eslint-config-next": "15.3.4",
-    "@eslint/eslintrc": "^3"
+    "jest": "^30.0.3",
+    "jest-environment-jsdom": "^30.0.2",
+    "typescript": "^5.5.3"
   }
 }
