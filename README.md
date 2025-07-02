@@ -81,7 +81,7 @@ This project includes several scripts to streamline development and testing:
 This project is equipped with a robust test suite to ensure quality.
 
 ### **Running Tests**
-To run all unit and component tests in watch mode and with a complete code coverate report, use:
+To run all unit and component tests with a complete code coverate report, use:
 ```bash
 npm test
 ```

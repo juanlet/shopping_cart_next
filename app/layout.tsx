@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// Import the Poppins font
+import { Poppins } from "next/font/google";
 import { ReduxProvider } from "./components/Provider";
-import { Navbar } from "./components/Navbar"; 
+import { Navbar } from "./components/Navbar";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Configure the font with desired weights
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Promotional Shopping Cart",
@@ -18,9 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* Apply the font class to the body */}
+      <body className={poppins.className}>
         <ReduxProvider>
-        <Navbar />
+          <Navbar />
           <main className="container mx-auto p-4 md:p-8">
             {children}
           </main>

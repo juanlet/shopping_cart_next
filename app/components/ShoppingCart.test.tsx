@@ -49,13 +49,10 @@ describe('<ShoppingCart />', () => {
       // Let the fetch mock resolve
     });
     
-    // Check that the item is rendered
     expect(screen.getByText('T-shirt')).toBeInTheDocument();
     
-    // Check that fetch was called
     expect(fetch).toHaveBeenCalledTimes(1);
     
-    // Check that the total from the mocked API response is displayed
     expect(screen.getByText('$107.97')).toBeInTheDocument();
   });
 });

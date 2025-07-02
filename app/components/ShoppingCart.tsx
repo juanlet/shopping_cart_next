@@ -41,7 +41,7 @@ export function ShoppingCart({ userType }: Props) {
   }, [cartItems, userType]);
 
   return (
-    <div className="bg-card p-6 rounded-xl shadow-sm border">
+    <div className="bg-white p-6 rounded-lg shadow-sm">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-semibold text-primary">Your Cart</h2>
         {cartItems.length > 0 && (
