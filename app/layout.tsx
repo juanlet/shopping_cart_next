@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-// Import the Poppins font
 import { Poppins } from "next/font/google";
 import { ReduxProvider } from "./components/Provider";
 import { Navbar } from "./components/Navbar";
 import "./globals.css";
 
-// Configure the font with desired weights
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -23,7 +21,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* Apply the font class to the body */}
       <body className={poppins.className}>
         <ReduxProvider>
           <Navbar />

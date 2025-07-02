@@ -50,7 +50,6 @@ The following decisions were made to ensure a robust and maintainable applicatio
 -   **Styling**: Tailwind CSS v4
 -   **State Management**: Redux Toolkit
 -   **Testing**: Jest & React Testing Library
--   **Icons**: Lucide React
 
 ---
 
