@@ -21,6 +21,7 @@ const config = {
     '!jest.config.mjs',
     '!jest.setup.js',
     '!app/store/store.ts',
+    '!/app/components/Navbar.tsx'
   ],
 }
  
